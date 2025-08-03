@@ -1,137 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Nabil Hamzah Ash Shiddiq - Resume</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 40px auto;
+      padding: 0 30px;
       max-width: 850px;
+      color: #222;
+      background: #fff;
       line-height: 1.6;
-      color: #333;
     }
 
     h1 {
       font-size: 28px;
+      margin-bottom: 10px;
       color: #003366;
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      font-size: 20px;
-      color: #0073e6;
-      border-bottom: 1px solid #0073e6;
-      padding-bottom: 3px;
-      margin-top: 30px;
-    }
-
-    h3 {
-      margin: 5px 0;
     }
 
     .contact {
       font-size: 14px;
-      color: #555;
-      margin-bottom: 10px;
+      color: #444;
+      margin-bottom: 20px;
     }
 
-    .section {
-      margin-top: 25px;
+    .contact img {
+      width: 16px;
+      vertical-align: middle;
+      margin-right: 6px;
     }
 
-    ul {
-      margin: 5px 0 15px 20px;
-    }
-
-    .subsection {
+    .section-title {
+      font-size: 18px;
       font-weight: bold;
+      margin-top: 35px;
+      margin-bottom: 10px;
+      color: #0073e6;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      display: flex;
+      align-items: center;
+    }
+
+    .section-title img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .entry {
+      margin-bottom: 20px;
+    }
+
+    .position {
+      font-weight: bold;
+    }
+
+    .institution {
+      font-style: italic;
+      color: #555;
     }
 
     .date {
       float: right;
+      font-size: 13px;
       font-style: italic;
-      color: #555;
+      color: #666;
+    }
+
+    ul {
+      margin: 5px 0 10px 20px;
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 2px 10px 2px 0;
+    }
+
+    a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+
+    .project-title {
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #003366;
+  text-decoration: none;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+}
+
+
+    .last-updated {
+      font-size: 12px;
+      color: #888;
+      margin-top: -10px;
+      margin-bottom: 20px;
     }
 
     .clear {
       clear: both;
     }
-
-    .skills span {
-      display: inline-block;
-      margin-bottom: 5px;
-    }
-
-    .project-title {
-      font-weight: bold;
-      font-size: 16px;
-      margin-top: 10px;
-    }
   </style>
 </head>
 <body>
 
-  <h1>Nabil Hamzah Ash Shiddiq</h1>
-  <div class="contact">
-    📍 West Bogor · ✉️ nabilhamzaha@gmail.com · <a href="https://linkedin.com/in/nabil-hamzah-ash-shiddiq">LinkedIn</a> · Nbil-byte  
-    <br><em>Last updated: August 2025</em>
+  <div style="text-align: center;"><h1>Nabil Hamzah Ash Shiddiq</h1></div>
+  <div class="contact" style="text-align: center;">
+    <img src="https://img.icons8.com/ios-filled/50/000000/marker.png"/> West Bogor &nbsp;|&nbsp;
+    <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png"/> <a href="mailto:nabilhamzaha@gmail.com">nabilhamzaha@gmail.com</a> &nbsp;|&nbsp;
+    <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"/> <a href="https://linkedin.com/in/nabil-hamzah-ash-shiddiq">nabil-hamzah-ash-shiddiq</a> &nbsp;|&nbsp;
+    <img src="https://img.icons8.com/ios-filled/50/000000/github.png"/> Nbil-byte
   </div>
+  <div class="last-updated">Last updated: August 2025</div>
 
-  <h2>Professional Summary</h2>
+  <div class="section-title">
+    <img src="https://img.icons8.com/ios-filled/50/000000/about.png"/> Professional Summary
+  </div>
   <p>
-    Third-year Computer Science student at IPB University with a sharp eye for data-driven decisions, a strong foundation in analytics, and hands-on experience in cross-functional team leadership. Eager to bridge technical insight with business impact through product thinking and data storytelling.
+    Third-year Computer Science student at IPB University with a sharp eye for data-driven decisions,
+    a strong foundation in analytics, and hands-on experience in cross-functional team leadership.
+    Eager to bridge technical insight with business impact through product thinking and data storytelling.
   </p>
 
-  <h2>Experience</h2>
+  <div class="section-title">
+    <img src="https://img.icons8.com/ios-filled/50/000000/briefcase.png"/> Experience
+  </div>
 
-  <h3>
-    Bangkit Academy (by Google, Tokopedia, Gojek, Traveloka), Machine Learning Student
-    <span class="date">Sept 2024 – Dec 2024</span>
-  </h3>
-  <ul>
-    <li>Completed a 900+ hour multidisciplinary curriculum across ML, Product, and Cloud.</li>
-    <li>Developed data-driven mindset and stakeholder-oriented product approach.</li>
-  </ul>
+  <div class="entry">
+    <div class="position">Machine Learning Student <span class="date">Sept 2024 – Dec 2024</span></div>
+    <div class="institution">Bangkit Academy (by Google, Tokopedia, Gojek, Traveloka)</div>
+    <ul>
+      <li>Completed a 900+ hour multidisciplinary curriculum across ML, Product, and Cloud.</li>
+      <li>Developed data-driven mindset and stakeholder-oriented product approach.</li>
+    </ul>
+  </div>
 
-  <h3>
-    HIMALKOM IPB University – Research & Tech Division, Staff Member
-    <span class="date">Jan 2024 – Dec 2024</span>
-  </h3>
-  <ul>
-    <li>Designed and conducted three data collection and analysis projects for department improvement.</li>
-    <li>Collaborated on developing the department website, improving access to student resources.</li>
-  </ul>
+  <div class="entry">
+    <div class="position">Staff Member <span class="date">Jan 2024 – Dec 2024</span></div>
+    <div class="institution">HIMALKOM IPB University – Research & Tech Division</div>
+    <ul>
+      <li>Designed and conducted three data collection and analysis projects for department improvement.</li>
+      <li>Collaborated on developing the department website, improving access to student resources.</li>
+    </ul>
+  </div>
 
-  <h3>
-    Computer Problem Solving Competition 2024, Chief Executive
-    <span class="date">June 2024 – Oct 2024</span>
-  </h3>
-  <ul>
-    <li>Led 48 staff and managed 136 participants.</li>
-    <li>Organized event logistics, user experience, and post-event data feedback to inform future planning.</li>
-  </ul>
+  <div class="entry">
+    <div class="position">Chief Executive <span class="date">June 2024 – Oct 2024</span></div>
+    <div class="institution">Computer Problem Solving Competition 2024</div>
+    <ul>
+      <li>Led 48 staff and managed 136 participants.</li>
+      <li>Organized event logistics, user experience, and post-event data feedback to inform future planning.</li>
+    </ul>
+  </div>
 
-  <h2>Education</h2>
-  <h3>BSc IPB University, Computer Science <span class="date">Aug 2022 – Aug 2026</span></h3>
+  <div class="section-title">
+    <img src="https://img.icons8.com/ios-filled/50/000000/graduation-cap.png"/> Education
+  </div>
+  <div class="entry">
+    <div class="position">BSc in Computer Science <span class="date">Aug 2022 – Aug 2026</span></div>
+    <div class="institution">IPB University</div>
+  </div>
 
-  <h2>Courses</h2>
-  <h3>
-    Bangkit Academy (by Google, Tokopedia, Gojek, Traveloka), Machine Learning Path
-    <span class="date">Sept 2024 – Dec 2024</span>
-  </h3>
-  <ul>
-    <li>Successfully completed a comprehensive 900+ hour training in ML, deep learning, and real-world applications.</li>
-    <li>Developed data-driven mindset and stakeholder-oriented product approach.</li>
-  </ul>
+  <div class="section-title">
+    <img src="https://img.icons8.com/ios-filled/50/000000/training.png"/> Courses
+  </div>
 
-  <h3>DeepLearning.AI – Custom Models & Loss Functions with TensorFlow <span class="date">Nov 2024 – Dec 2024</span></h3>
+  <div class="entry">
+    <div class="position">Machine Learning Path <span class="date">Sept 2024 – Dec 2024</span></div>
+    <div class="institution">Bangkit Academy</div>
+    <ul>
+      <li>900+ hour training in ML, deep learning, and real-world applications.</li>
+      <li>Developed data-driven mindset and stakeholder-oriented product approach.</li>
+    </ul>
+  </div>
 
-  <h3>LinkedIn Learning – Building AI Products <span class="date">Mar 2025</span></h3>
-  <h3>LinkedIn Learning – Business Ethics <span class="date">Mar 2025</span></h3>
-  <h3>LinkedIn Learning – Problem-Solving Techniques <span class="date">Mar 2025</span></h3>
+  <div class="entry">
+    <div class="position">Custom Models & Loss Functions with TensorFlow <span class="date">Nov 2024 – Dec 2024</span></div>
+    <div class="institution">DeepLearning.AI</div>
+  </div>
 
-  <h2>Skills</h2>
+  <div class="entry">
+    <div class="position">Building AI Products <span class="date">Mar 2025</span></div>
+    <div class="institution">LinkedIn Learning</div>
+  </div>
+
+  <div class="entry">
+    <div class="position">Business Ethics <span class="date">Mar 2025</span></div>
+    <div class="institution">LinkedIn Learning</div>
+  </div>
+
+  <div class="entry">
+    <div class="position">Problem-Solving Techniques <span class="date">Mar 2025</span></div>
+    <div class="institution">LinkedIn Learning</div>
+  </div>
+
+  <div class="section-title">
+    <img src="https://img.icons8.com/ios-filled/50/000000/services.png"/> Skills
+  </div>
   <div class="skills">
     <span><strong>Data Analysis:</strong> SQL, Python, Pandas, Excel</span><br>
     <span><strong>Business Intelligence:</strong> Dashboarding, Data Visualization, Metric Definition</span><br>
@@ -140,16 +213,23 @@
     <span><strong>Soft Skills:</strong> Stakeholder Communication, Team Leadership, Problem-Solving</span>
   </div>
 
-  <h2>Projects</h2>
+  <div class="section-title">
+    <img src="https://img.icons8.com/ios-filled/50/000000/code.png"/> Projects
+  </div>
 
-  <div class="project-title">HIRA – Friends for the Deaf (HearAssist)</div>
+  <a class="project-title" href="https://github.com/Nbil-byte/HIRA-Hear-Assistant-" target="_blank">
+    HIRA – Friends for the Deaf (HearAssist)</a>
   <p>
-    Developed a real-time audio-to-text transcription system designed to support Deaf and Hard of Hearing (D/HH) individuals in customer-facing roles, especially in café environments. The solution enhances workplace inclusivity by integrating AI/ML technologies, cloud-based infrastructure, and an intuitive web-based user interface.
+    Developed a real-time audio-to-text transcription system designed to support Deaf and Hard of Hearing (D/HH)
+    individuals in customer-facing roles. The solution enhances workplace inclusivity by
+    integrating AI/ML technologies, cloud-based infrastructure, and an intuitive web-based user interface.
   </p>
 
-  <div class="project-title">Halal Certification Trend Analysis and Forecasting Dashboard</div>
+  <a class="project-title" href="https://github.com/Nbil-byte/capstone-bpjph" target="_blank">
+  Halal Certification Trend Analysis and Forecasting Dashboard
+</a>
   <p>
-    Completed as part of the Capstone Course at IPB University in collaboration with BPJPH (Indonesia’s Halal Product Assurance Agency). This project developed a data-driven analytics dashboard to analyze and forecast halal certification trends in Indonesia. The system integrates historical data from BPJPH and other official sources, providing insights for policymakers, business actors, and researchers using time-series forecasting and interactive visualizations.
+    Built in collaboration with BPJPH for capstone project. Developed an analytics dashboard to forecast halal certification trends in Indonesia using time-series modeling and visualization.
   </p>
 
 </body>
