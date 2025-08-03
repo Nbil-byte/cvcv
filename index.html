@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Nabil Hamzah Ash Shiddiq - Resume</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #fff;
+      margin: 0;
+      padding: 40px 20px;
+      background: #f9fafa;
       color: #333;
-      padding: 40px;
-      max-width: 800px;
+    }
+
+    .container {
+      max-width: 850px;
       margin: auto;
-      line-height: 1.6;
+      background: #ffffff;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.07);
+      border-radius: 6px;
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 32px;
+      margin-bottom: 5px;
       color: #003366;
       text-align: center;
-      margin-bottom: 5px;
     }
 
     .contact {
       text-align: center;
       font-size: 14px;
-      margin-bottom: 30px;
-      color: #444;
+      color: #555;
+      margin-bottom: 25px;
     }
 
     .contact a {
@@ -36,77 +47,92 @@
     h2 {
       font-size: 18px;
       color: #005c99;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 35px;
+      border-bottom: 2px solid #cce6ff;
+      padding-bottom: 6px;
+      margin-top: 40px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     .job-title {
-      font-weight: bold;
+      font-weight: 600;
     }
 
     .org {
       font-style: italic;
       color: #666;
+      margin-bottom: 5px;
     }
 
     .date {
       float: right;
       font-size: 13px;
       color: #888;
+      font-style: italic;
     }
 
     ul {
       padding-left: 20px;
-      margin: 5px 0 15px 0;
+      margin-top: 5px;
+      margin-bottom: 20px;
     }
 
     .skills span {
       display: inline-block;
-      background: #e6f0fa;
+      background: #e0f0ff;
       color: #003366;
-      padding: 5px 10px;
-      margin: 4px 4px 4px 0;
-      font-size: 13px;
+      padding: 6px 12px;
+      margin: 4px 6px 4px 0;
       border-radius: 4px;
+      font-size: 13px;
     }
 
     .project-title {
-      font-weight: bold;
+      font-weight: 600;
+      margin-top: 12px;
+      font-size: 15px;
     }
 
-    a {
-      color: #0055cc;
+    .project-title a {
       text-decoration: none;
+      color: #0055cc;
     }
 
-    a:hover {
+    .project-title a:hover {
       text-decoration: underline;
     }
 
-    .clear {
-      clear: both;
+    .section p {
+      margin-bottom: 16px;
+    }
+
+    @media print {
+      body {
+        background: none;
+      }
+      .container {
+        box-shadow: none;
+        border-radius: 0;
+      }
     }
   </style>
 </head>
 <body>
 
+<div class="container">
   <h1>Nabil Hamzah Ash Shiddiq</h1>
-  <div class="contact">
-    <a>
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlemaps.svg" alt="Location" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">
-    West Bogor · </a>
-    <a href="mailto:nabilhamzaha@gmail.com" style="vertical-align:middle;">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">
-      nabilhamzaha@gmail.com
-    </a> ·
-    <a href="https://linkedin.com/in/nabil-hamzah-ash-shiddiq" style="vertical-align:middle;">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">nabil-hamzah-ash-shiddiq
-    </a> ·
-    <a href="https://github.com/Nbil-byte" style="vertical-align:middle;">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">Nbil-byte
-    </a> ·
-  </div>
+<div class="contact">
+    West Bogor &middot;
+    <a href="mailto:nabilhamzaha@gmail.com" style="margin-right:6px;">
+        <img src="https://img.icons8.com/ios-filled/16/000000/new-post.png" alt="Email" style="vertical-align:middle;margin-right:3px;"> nabilhamzaha@gmail.com
+    </a> &middot;
+    <a href="https://linkedin.com/in/nabil-hamzah-ash-shiddiq" style="margin-right:6px;">
+        <img src="https://img.icons8.com/ios-filled/16/0077b5/linkedin.png" alt="LinkedIn" style="vertical-align:middle;margin-right:3px;"> LinkedIn
+    </a> &middot;
+    <a href="https://github.com/Nbil-byte">
+        <img src="https://img.icons8.com/ios-glyphs/16/000000/github.png" alt="GitHub" style="vertical-align:middle;margin-right:3px;"> GitHub: Nbil-byte
+    </a>
+</div>
 
   <h2>Professional Summary</h2>
   <p>
@@ -121,7 +147,7 @@
     <div class="job-title">Machine Learning Student <span class="date">Sept 2024 – Dec 2024</span></div>
     <div class="org">Bangkit Academy (by Google, Tokopedia, Gojek, Traveloka)</div>
     <ul>
-      <li>Completed 900+ hour multidisciplinary curriculum across ML, Product, and Cloud.</li>
+      <li>Completed 900+ hour curriculum across Machine Learning, Deep Learning, and Data Science.</li>
       <li>Developed data-driven mindset and stakeholder-oriented product approach.</li>
     </ul>
   </div>
@@ -130,8 +156,8 @@
     <div class="job-title">Staff Member <span class="date">Jan 2024 – Dec 2024</span></div>
     <div class="org">HIMALKOM IPB – Research & Tech Division</div>
     <ul>
-      <li>Designed and conducted three data collection and analysis projects for department improvement.</li>
-      <li>Collaborated on department website development, improving resource access.</li>
+      <li>Conducted data analysis projects for department improvement.</li>
+      <li>Built department website to enhance access to student resources.</li>
     </ul>
   </div>
 
@@ -139,8 +165,8 @@
     <div class="job-title">Chief Executive <span class="date">June 2024 – Oct 2024</span></div>
     <div class="org">Computer Problem Solving Competition</div>
     <ul>
-      <li>Led 48 staff and coordinated 136 participants.</li>
-      <li>Oversaw event logistics and analyzed feedback for improvement.</li>
+      <li>Led 48 staff and managed 136 participants.</li>
+      <li>Oversaw event logistics, user experience, and data-driven event feedback.</li>
     </ul>
   </div>
 
@@ -150,37 +176,35 @@
 
   <h2>Courses</h2>
   <ul>
-    <li><strong>Bangkit Academy</strong> – Machine Learning Path (2024)</li>
-    <li><strong>DeepLearning.AI</strong> – Custom Models & TensorFlow (2024)</li>
-    <li><strong>LinkedIn Learning</strong> – AI Products, Business Ethics, Problem-Solving (2025)</li>
+    <li><strong>Bangkit Academy:</strong> Machine Learning Path (2024)</li>
+    <li><strong>DeepLearning.AI:</strong> TensorFlow Specialization (2024)</li>
+    <li><strong>LinkedIn Learning:</strong> AI Products, Business Ethics, Problem Solving (2025)</li>
   </ul>
 
   <h2>Skills</h2>
   <div class="skills">
-    <span>SQL</span><span>Python</span><span>Pandas</span><span>Excel</span>
-    <span>Data Viz</span><span>Tableau</span><span>Google Data Studio</span>
-    <span>Looker</span><span>Git</span><span>Agile</span><span>Product Thinking</span>
+    <span>Python</span><span>SQL</span><span>Pandas</span><span>Excel</span>
+    <span>Dashboarding</span><span>Tableau</span><span>Looker</span><span>Git</span>
+    <span>Google Data Studio</span><span>Agile</span><span>Product Thinking</span>
   </div>
 
   <h2>Projects</h2>
 
   <div class="project-title">
-    <a href="https://github.com/Nbil-byte/hearassist" target="_blank">
-      HIRA – Friends for the Deaf (HearAssist)
-    </a>
+    <a href="https://github.com/Nbil-byte/hearassist" target="_blank">HIRA – Friends for the Deaf (HearAssist)</a>
   </div>
   <p>
-    Real-time audio-to-text transcription for D/HH individuals in customer-facing roles using ML, cloud, and web UI.
+    Real-time audio-to-text transcription system for D/HH individuals in customer-facing roles using ML, cloud services, and a user-friendly web interface.
   </p>
 
   <div class="project-title">
-    <a href="https://github.com/Nbil-byte/capstone-bpjph" target="_blank">
-      Halal Certification Forecasting Dashboard
-    </a>
+    <a href="https://github.com/Nbil-byte/capstone-bpjph" target="_blank">Halal Certification Forecasting Dashboard</a>
   </div>
   <p>
-    Capstone project with BPJPH. Built a dashboard to analyze and forecast halal certification trends using time-series and data visualization tools.
+    Built a dashboard in collaboration with BPJPH to analyze and forecast halal certification trends using time-series modeling and interactive visualization.
   </p>
+
+</div>
 
 </body>
 </html>
